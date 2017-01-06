@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Keeper</title>
+	<meta charset="UTF-8">
+
+	<!-- build:css css/main.min.css -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<!-- endbuild -->
+</head>
+<body>
+
+	<div class="main">
+		<section class="menu">
+			<div class="menu-logo"></div>
+			<div class="menu-search"></div>
+			<div class="menu-auth"></div>
+		</section>
+
+		<section class="main-page">
+			<header class="main-page__header">
+				<h1>Save your dreams!</h1>
+			</header>
+			<div class="main-page__paragraph">
+				<p>
+					it's very simple
+				</p>
+			</div>
+			<div class="main-page__btn-wrapper">
+				<button class="btn btn-white">Create your album</button>
+			</div>
+			<div class="main-page__carousel-btn">
+				<button class="btn btn-carousel btn-carousel--left"></button>
+				<button class="btn btn-carousel btn-carousel--right"></button>
+			</div>
+		</section>
+
+		<section class="authorization">
+			<div class="authorization-tabs">
+				<div class="authorization-tab">
+					<span>Registration</span>
+				</div>
+				<div class="authorization-tab">
+					<span>Authorization</span>
+				</div>
+				<div class="authorization-tabs__contant">
+					<div class="authorization-tab__item">
+						<form class="authorization-tab__item__reg">
+							<label for="lNameReg"></label>
+							<input type="text" id="lNameReg">
+							<label for="passwReg"></label>
+							<input type="text" id="passwReg">
+							<label for="rePasswReg"></label>
+							<input type="text" id="rePasswReg">
+							<input type="submit" value="Registration" class="btn btn-reg">
+						</form>
+					</div>
+					<div class="authorization-tab__item">
+						<form class="authorization-tab__item__login">
+							<label for="lNameLogin"></label>
+							<input type="text" id="lNameLogin">
+							<label for="passwLogin"></label>
+							<input type="text" id="passwLogin">
+							<input type="submit" value="Log-in" class="btn btn-login">
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="personal-page">
+			<header class="personal-page__header">
+				<h2>Albums</h2>
+			</header>
+			<div class="personal-page__albums-wrapper"></div>
+			<div class="personal-page__buttons">
+				<button class="btn btn-img btn-img--add"></button>
+				<button class="btn btn-img btn-img--del"></button>
+				<button class="btn btn-img btn-img--edit"></button>
+			</div>
+		</section>
+
+		<section class="album">
+			<header class="album__header"></header>
+			<div class="album__img-wrapper"></div>
+		</section>
+
+		<section class="slider">
+			<button class="btn btn-img btn-img--exit"></button>
+			<div class="slider__carousel"></div>
+			<div class="slider__carousel-btn">
+				<button class="btn btn-carousel btn-carousel--left"></button>
+				<button class="btn btn-carousel btn-carousel--right"></button>
+			</div>
+		</section>
+
+		<section class="footer">
+			<div class="btn btn-link"></div>
+			<div class="copyright"></div>
+			<div class="footer-logo"></div>
+		</section>
+	</div>
+
+	<!-- build:js js/vendor.min.js -->
+	<script type="text/javascript" src="libs/jquery-1.12.4.min/index.js"></script>
+	<script type="text/javascript" src="libs/firebase/firebase.js"></script>
+	<script type="text/javascript" src="libs/sha256/sha256.js"></script>
+	<!-- endbuild -->
+
+	<!-- build:js js/main.min.js -->
+	<script type="text/javascript" src="js/app.js"></script>
+	<!-- endbuild -->
+</body>
+</html>

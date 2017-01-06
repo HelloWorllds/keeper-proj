@@ -1,0 +1,20 @@
+{
+  "name": "keeper",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Pinguin"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "firebase": "^3.6.4"
+  }
+}
