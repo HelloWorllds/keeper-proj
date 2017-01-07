@@ -6,6 +6,7 @@ var useref = require("gulp-useref");
 var gulpif = require("gulp-if");
 var uglify = require("gulp-uglify");
 var csso = require("gulp-csso");
+var imagemin = require('gulp-imagemin');
 
 //server
 
@@ -35,6 +36,13 @@ gulp.task("build", function() {
 	.pipe(gulpif("*.js", uglify()))
 	.pipe(gulpif("*.css", csso()))
 	.pipe(gulp.dest("public"));
+});
+
+//images
+gulp.task("image", function() {
+    gulp.src('app/img/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('app/images'))
 });
 
 gulp.task("watch", function() {

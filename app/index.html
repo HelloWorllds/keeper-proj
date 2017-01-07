@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 
 	<!-- build:css css/main.min.css -->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<!-- endbuild -->
 </head>
@@ -12,32 +13,37 @@
 
 	<div class="main">
 		<section class="menu">
-			<div class="menu-logo"></div>
-			<div class="menu-search"></div>
-			<div class="menu-auth"></div>
+			<div class="menu__logo"></div>
+			<div class="menu__search">
+				<span></span>
+				<input type="text">
+			</div>
+			<div class="menu__auth">
+				<a href="#">Log in</a>
+				/
+				<a href="#">Sign in</a>
+			</div>
 		</section>
 
 		<section class="main-page">
 			<header class="main-page__header">
 				<h1>Save your dreams!</h1>
-			</header>
-			<div class="main-page__paragraph">
 				<p>
 					it's very simple
 				</p>
-			</div>
+			</header>
 			<div class="main-page__btn-wrapper">
 				<button class="btn btn-white">Create your album</button>
 			</div>
 			<div class="main-page__carousel-btn">
-				<button class="btn btn-carousel btn-carousel--left"></button>
-				<button class="btn btn-carousel btn-carousel--right"></button>
+				<button class="btn btn-carousel btn-carousel--left"><span></span></button>
+				<button class="btn btn-carousel btn-carousel--right"><span></span></button>
 			</div>
 		</section>
 
 		<section class="authorization">
 			<div class="authorization-tabs">
-				<div class="authorization-tab">
+				<div class="authorization-tab active">
 					<span>Registration</span>
 				</div>
 				<div class="authorization-tab">
@@ -46,22 +52,31 @@
 				<div class="authorization-tabs__contant">
 					<div class="authorization-tab__item">
 						<form class="authorization-tab__item__reg">
-							<label for="lNameReg"></label>
+							<label for="lNameReg">Your login name:</label>
 							<input type="text" id="lNameReg">
-							<label for="passwReg"></label>
-							<input type="text" id="passwReg">
-							<label for="rePasswReg"></label>
-							<input type="text" id="rePasswReg">
-							<input type="submit" value="Registration" class="btn btn-reg">
+							<br>
+							<label for="passwReg">Your password:</label>
+							<input type="password" id="passwReg">
+							<br>
+							<label for="rePasswReg">Repaet your password:</label>
+							<input type="password" id="rePasswReg">
+							<br>
+							<div class="authorization-tab__item__btn-wrapper">
+								<input type="submit" value="Registration" class="btn btn-form">
+							</div>
 						</form>
 					</div>
 					<div class="authorization-tab__item">
 						<form class="authorization-tab__item__login">
-							<label for="lNameLogin"></label>
+							<label for="lNameLogin">Your login name:</label>
 							<input type="text" id="lNameLogin">
-							<label for="passwLogin"></label>
-							<input type="text" id="passwLogin">
-							<input type="submit" value="Log-in" class="btn btn-login">
+							<br>
+							<label for="passwLogin">Your password:</label>
+							<input type="password" id="passwLogin">
+							<br>
+							<div class="authorization-tab__item__btn-wrapper">
+								<input type="submit" value="Log in" class="btn btn-form">
+							</div>							
 						</form>
 					</div>
 				</div>
@@ -89,15 +104,15 @@
 			<button class="btn btn-img btn-img--exit"></button>
 			<div class="slider__carousel"></div>
 			<div class="slider__carousel-btn">
-				<button class="btn btn-carousel btn-carousel--left"></button>
-				<button class="btn btn-carousel btn-carousel--right"></button>
+				<button class="btn btn-carousel btn-carousel--left"><span></span></button>
+				<button class="btn btn-carousel btn-carousel--right"><span></span></button>
 			</div>
 		</section>
 
 		<section class="footer">
-			<div class="btn btn-link"></div>
-			<div class="copyright"></div>
-			<div class="footer-logo"></div>
+			<div class="footer__copyright">
+				<p>Copyright &#169; Pinguin 2017</p>
+			</div>
 		</section>
 	</div>
 
