@@ -1,18 +1,10 @@
-// Initialize Firebase
-var config = {
-	apiKey: "AIzaSyBaK3yPJP9p3F3tVC5TRVZntd08DDpiPhQ",
-	authDomain: "keeper-4e597.firebaseapp.com",
-	databaseURL: "https://keeper-4e597.firebaseio.com",
-	storageBucket: "keeper-4e597.appspot.com",
-	messagingSenderId: "874065713541"
-};
-
-firebase.initializeApp(config);
-
 $(document).ready(function() {
+
+	//fullscreen mode for body
 	var bodyHeight = $(window).height();
 	$("body").css("height", bodyHeight).css("width", $(window).width());
 
+	//background-slider in Main div
 	var backgrounds = ["main_bg1.jpg", "main_bg2.jpg", "main_bg3.jpg", "main_bg4.jpg", "main_bg5.jpg", "main_bg6.jpg", "main_bg7.jpg"];
 
 	var index = 0;	
@@ -61,8 +53,46 @@ $(document).ready(function() {
 		$(".main").css("background", "url('../images/main_bg" + bgIndex + ".jpg') no-repeat");
 	});
 
+	//tabs in authorization page
 	$(".authorization .authorization-tabs .authorization-tab").click(function() {
 		$(".authorization .authorization-tabs .authorization-tab").removeClass("active").eq($(this).index()).addClass("active");
 		$(".authorization .authorization-tab__item").hide().eq($(this).index()).fadeIn();
 	});
+
+	// //custom scrollbar init
+	// $(".album__img-wrapper").customScrollbar({
+	// 	skin: "default-skin"
+	// })
+
+	//download button
+	$(".album__header").click(function() {
+		if($(".btn-download").css("display") == "none") {
+			$(".btn-download").slideToggle("slow");
+		} else {
+			$(".btn-download").slideToggle("slow");
+		}
+	});
+
+	//album preview
+	var spanLength = $(".album__img-wrapper span").length;
+
+	for (var i = 1; i <= spanLength; ++i) {
+		if (i != spanLength) {
+			if (i == 1 || i % 6 == 0) {
+				// if () {
+
+				// }
+				$(".album__img-wrapper span:nth-child(" + i + ")").css("height", "412px");
+				$(".album__img-wrapper span:nth-child(" + i + ")").css("width", "66.666%");
+				$(".album__img-wrapper span:nth-child(" + i + ")").css("float", "left");
+			} else if (i % 3 == 0 || i % 9 == 0) {
+				// if () {
+
+				// }
+				$(".album__img-wrapper span:nth-child(" + i + ")").css("height", "412px");
+				$(".album__img-wrapper span:nth-child(" + i + ")").css("width", "66.666%");
+				$(".album__img-wrapper span:nth-child(" + i + ")").css("float", "right");
+			}
+		}
+	}
 });

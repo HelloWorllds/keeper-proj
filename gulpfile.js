@@ -23,7 +23,7 @@ gulp.task("style", function() {
 	return gulp.src("app/sass/**/*.sass")
 	.pipe(sass().on("error", sass.logError))
 	.pipe(autoprefixer({
-		browsers: ['last 15 versions']
+		browsers: ['last 15 versions', 'ie 8', 'ie 9']
 	}))
 	.pipe(gulp.dest("app/css"));
 });
