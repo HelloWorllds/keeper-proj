@@ -28,7 +28,7 @@
 
 		<section class="main-page">
 			<header class="main-page__header">
-				<h1>Save your dreams!</h1>
+				<h1>Keep your dreams!</h1>
 				<p>
 					it's very simple
 				</p>
@@ -115,21 +115,36 @@
 			</div>
 		</section>
 
-		<section class="slider">
-			<button class="btn btn-img btn-img--exit"></button>
-			<div class="slider__carousel"></div>
-			<div class="slider__carousel-btn">
-				<button class="btn btn-carousel btn-carousel--left"><span></span></button>
-				<button class="btn btn-carousel btn-carousel--right"><span></span></button>
-			</div>
-		</section>
-
 		<section class="footer">
 			<div class="footer__copyright">
 				<p>Copyright &#169; Pinguin 2017</p>
 			</div>
 		</section>
 	</div>
+
+	<section class="slider">
+		<div class="slider__btn-wrapper">
+			<button class="btn btn-img btn-img--exit"></button>
+		</div>
+		<div class="slider__carousel">
+			<div class="slider__carousel__img-wrapper">
+				<img src="images/main_bg1.jpg" class="visible-img">
+				<img src="images/main_bg2.jpg">
+				<img src="images/main_bg3.jpg">
+				<img src="images/main_bg4.jpg">
+				<img src="images/main_bg5.jpg">
+				<img src="images/main_bg6.jpg">
+				<img src="images/main_bg7.jpg">
+			</div>			
+			<div class="slider__carousel__info">
+				This is info div
+			</div>
+		</div>
+		<div class="slider__carousel-btn">
+			<button class="btn btn-carousel btn-carousel--left"><span></span></button>
+			<button class="btn btn-carousel btn-carousel--right"><span></span></button>
+		</div>		
+	</section>
 
 	<!-- build:js js/vendor.min.js -->
 	<script type="text/javascript" src="libs/jquery-1.12.4.min/index.js"></script>
