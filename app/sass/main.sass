@@ -113,6 +113,13 @@ body
 	&:hover
 		background-position: -316px -109px
 
+.btn-img--like
+	width: 23px
+	height: 23px
+	background-position: -365px -114px
+	&:hover
+		background-position: -403px -114px
+
 .menu
 	display: block
 	position: fixed
@@ -379,10 +386,35 @@ body
 			bottom: 3px
 			left: 50%
 			width: 80%			
-			height: 80px
+			height: 50px
 			margin-left: -40%
 			background: rgba(0, 0, 0, 0.8)
 			color: $white
+			padding: 15px 50px
+			.slider__carousel__info__image-name
+				display: inline-block
+				font-size: 15px
+				font-weight: bold
+				float: left
+			.slider__carousel__info__img-counter
+				display: inline-block
+				width: 90px
+				height: 20px
+				color: $dark-grey
+			.slider__carousel__info__btn-wrapper
+				display: inline-block
+				float: right
+				button
+					display: inline-block
+				label
+					display: inline-block
+					font-size: 12px
+					position: relative
+					top: -3px
+			&::after
+				content: ""
+				display: table
+				clear: both
 		&:hover
 			.slider__carousel__info
 				display: block
