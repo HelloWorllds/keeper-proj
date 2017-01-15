@@ -163,5 +163,49 @@ $(document).ready(function() {
 			$(".btn-img--like").prop("disabled", true);			
 		}
 		flag = false;
-	});	
+	});
+
+	//pseudo navigation :)
+
+	localStorage.setItem("show", "block");
+	localStorage.setItem("hide", "none");
+
+	var showBlock = localStorage.getItem("show");
+	var hideBlock = localStorage.getItem("hide");
+
+	//white btn in main-page to rigister
+	$(".btn-white").click(function() {
+		$(".main-page").css("display", hideBlock);
+		$(".authorization").css("display", showBlock);
+		$(".album").css("display", hideBlock);
+		$(".slider").css("display", hideBlock);
+	});
+
+	//log in btn to rigister
+	$("[href='#reg']").click(function() {
+		$(".main-page").css("display", hideBlock);
+		$(".authorization").css("display", showBlock);
+		$(".album").css("display", hideBlock);
+		$(".slider").css("display", hideBlock);
+		$(".authorization .authorization-tabs .authorization-tab:eq(1)").removeClass("active");
+		$(".authorization .authorization-tabs .authorization-tab:eq(0)").addClass("active");
+	});
+
+	//sign in btn to authorization
+	$("[href='#auth']").click(function() {
+		$(".main-page").css("display", hideBlock);
+		$(".authorization").css("display", showBlock);
+		$(".album").css("display", hideBlock);
+		$(".slider").css("display", hideBlock);
+		$(".authorization .authorization-tabs .authorization-tab:eq(0)").removeClass("active");
+		$(".authorization .authorization-tabs .authorization-tab:eq(1)").addClass("active");
+	});
+
+	//logo to main-page
+	$(".menu__logo").click(function() {
+		$(".main-page").css("display", showBlock);
+		$(".authorization").css("display", hideBlock);
+		$(".album").css("display", hideBlock);
+		$(".slider").css("display", hideBlock);
+	});
 });

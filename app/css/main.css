@@ -29,6 +29,9 @@ body {
   height: 60px;
   border: 0;
   cursor: pointer; }
+  .btn:active {
+    -webkit-box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.6);
+            box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.6); }
 
 .btn-white {
   width: 250px;
@@ -37,9 +40,6 @@ body {
   -webkit-border-radius: 8px;
           border-radius: 8px;
   font-size: 18px; }
-  .btn-white:active {
-    -webkit-box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.6);
-            box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.6); }
 
 .btn-carousel {
   display: inline-block;
@@ -120,6 +120,23 @@ body {
   background-position: -365px -114px; }
   .btn-img--like:hover {
     background-position: -403px -114px; }
+
+.btn-ok {
+  width: 210px;
+  height: 40px;
+  margin-right: 15px;
+  background: #339933;
+  color: #fff; }
+  .btn-ok:hover {
+    background: #337733; }
+
+.btn-cancel {
+  width: 210px;
+  height: 40px;
+  background: #c70000;
+  color: #fff; }
+  .btn-cancel:hover {
+    background: #a30000; }
 
 .menu {
   display: block;
@@ -203,7 +220,7 @@ body {
     font-size: 11px; }
 
 .main-page {
-  display: none;
+  display: block;
   width: 100%;
   height: 100%;
   text-align: center;
@@ -295,6 +312,7 @@ body {
 
 .album {
   display: none;
+  position: relative;
   width: 100%;
   height: 100%;
   text-align: center;
@@ -344,9 +362,61 @@ body {
         max-height: 100%; }
   .album .album__form-wrapper {
     display: none; }
+  .album .album__priview-img {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9); }
+    .album .album__priview-img .album__priview-img__wrapper {
+      display: block;
+      position: relative;
+      top: 30%;
+      width: 500px;
+      height: 370px;
+      margin: 0 auto;
+      padding: 30px;
+      overflow: hidden;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.6); }
+      .album .album__priview-img .album__priview-img__wrapper .album__priview-img__close {
+        display: block;
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        color: #333;
+        cursor: pointer; }
+        .album .album__priview-img .album__priview-img__wrapper .album__priview-img__close:hover {
+          color: red; }
+      .album .album__priview-img .album__priview-img__wrapper .album__priview-img__img-wrapper {
+        display: block;
+        width: 440px;
+        height: 250px; }
+        .album .album__priview-img .album__priview-img__wrapper .album__priview-img__img-wrapper img {
+          max-width: 100%;
+          max-height: 100%; }
+      .album .album__priview-img .album__priview-img__wrapper .album__priview-img__input-wrapper {
+        display: block;
+        width: 440px;
+        height: 80px;
+        overflow: hidden;
+        margin-top: -3px; }
+        .album .album__priview-img .album__priview-img__wrapper .album__priview-img__input-wrapper input {
+          width: 100%;
+          height: 30px;
+          border: 0;
+          margin-bottom: 10px;
+          text-indent: 15px;
+          font-size: 16px;
+          font-weight: bold;
+          outline: none; }
+        .album .album__priview-img .album__priview-img__wrapper .album__priview-img__input-wrapper button {
+          display: inline-block; }
 
 .slider {
-  display: block;
+  display: none;
   width: 100%;
   height: 100%;
   text-align: center;
