@@ -15,3 +15,5 @@ function checkInput(flag, inputId) {
 		$("#" + inputId).css("border", "2px solid #339933");
 	}
 }
+
+

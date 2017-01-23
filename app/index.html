@@ -24,6 +24,11 @@
 				/
 				<a href="#" class="menu__auth__auth">Sign in</a>
 			</div>
+			<div class="menu__logout">
+				<p></p>
+				/
+				<a href="#" class="menu__auth__logout">Log out</a>
+			</div>
 		</section>
 
 		<section class="main-page">
@@ -63,7 +68,7 @@
 							<input type="password" id="rePasswReg">
 							<br>
 							<div class="authorization-tab__item__btn-wrapper">
-								<input type="submit" value="Registration" class="btn btn-form">
+								<button class="btn btn-form" id="btnReg">Registration</button>
 							</div>
 						</form>
 					</div>
@@ -76,7 +81,7 @@
 							<input type="password" id="passwLogin">
 							<br>
 							<div class="authorization-tab__item__btn-wrapper">
-								<input type="submit" value="Login" class="btn btn-form">
+								<button class="btn btn-form" id="btnLogin">Login</button>
 							</div>							
 						</form>
 					</div>
@@ -178,9 +183,11 @@
 	<!-- build:js js/main.min.js -->
 	<script type="text/javascript" src="js/firebase-init.js"></script>	
 	<script type="text/javascript" src="js/common.js"></script>
-	<script type="text/javascript" src="js/pseudo-routing.js"></script>
+	
 	<script type="text/javascript" src="js/registration.js"></script>
 	<script type="text/javascript" src="js/validator.js"></script>
+
+	<script type="text/javascript" src="js/pseudo-routing.js"></script>
 	<!-- endbuild -->
 </body>
 </html>

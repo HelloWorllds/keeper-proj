@@ -74,14 +74,61 @@ $(document).ready(function() {
 		localStorage.setItem("slider", hideBlock);
 	});
 
+	//from album to slider
+	$(".album__img-wrapper span").click(function() {
+		var showBlock = "block";
+		var hideBlock = "none";
+
+		$(".main").css("display", hideBlock);
+		$(".slider").css("display", showBlock);
+
+		localStorage.setItem("main", hideBlock);
+		localStorage.setItem("slider", showBlock);
+
+		var currentImg = $(this).children().attr("src");
+		var imgInSlider = $(".slider__carousel__img-wrapper img").attr("src");
+		
+		if (currentImg != imgInSlider) {
+			$(".slider__carousel__img-wrapper img").removeClass("visible-img");
+			$(".slider__carousel__img-wrapper img").attr("src", currentImg).addClass("visible-img");
+		}
+
+		// var test = $(this).children().attr("src");
+		// alert(test);
+	});
+
+	$(".slider__carousel__img-wrapper img").click(function() {
+		var test = $(this).attr("src");
+		alert(test);
+	});
+	
+	//from slider back to album
+	$(".btn-img--exit").click(function() {
+		var showBlock = "block";
+		var hideBlock = "none";
+
+		$(".main").css("display", showBlock);
+		$(".slider").css("display", hideBlock);
+
+		localStorage.setItem("main", showBlock);
+		localStorage.setItem("slider", hideBlock);
+	});
+
 	var mainPage = localStorage.getItem("main-page");
 	var authorization = localStorage.getItem("authorization");
 	var album = localStorage.getItem("album");
 	var slider = localStorage.getItem("slider");
+
+	var main = localStorage.getItem("main");
+	var menuAuth = localStorage.getItem("menu__auth");
+	var menuLogout = localStorage.getItem("menu__logout");
 
 	$(".main-page").css("display", mainPage);
 	$(".authorization").css("display", authorization);
 	$(".album").css("display", album);
 	$(".slider").css("display", slider);
 
+	$(".main").css("display", main);
+	$(".menu__logout").css("display", menuLogout);
+	$(".menu__auth").css("display", menuAuth);
 });
