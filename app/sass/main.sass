@@ -1,8 +1,8 @@
 @import vars
 
-
 *
 	box-sizing: border-box
+	behavior: url(../libs/PIE/PIE.htc)
 
 input, a, button
 	outline: none
@@ -33,13 +33,14 @@ body
 	cursor: pointer
 	&:active
 		box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.6)
+		behavior: url(libs/PIE/PIE.htc)
 
 .btn-white
 	width: 250px
 	background: $white
 	text-transform: capitalize
 	border-radius: 8px
-	font-size: 18px	
+	font-size: 18px
 
 .btn-carousel
 	display: inline-block
@@ -48,6 +49,7 @@ body
 	background: rgba(0, 0, 0, 0.3)
 	border-radius: 5px
 	overflow: hidden
+	behavior: url(libs/PIE/PIE.htc)
 	span
 		display: block
 		width: 20px
@@ -56,6 +58,7 @@ body
 		opacity: 0.6
 	&:hover
 		background: rgba(0, 0, 0, 0.5)
+		behavior: url(libs/PIE/PIE.htc)
 		span
 			opacity: 1
 
@@ -86,6 +89,7 @@ body
 	height: 80px
 	background: url(../images/sprite.png) no-repeat
 	opacity: 0.7
+	behavior: url(libs/PIE/PIE.htc)
 	&:hover
 		opacity: 1
 
@@ -105,6 +109,7 @@ body
 	background: rgba(0, 0, 0, 0.8)
 	color: $white
 	margin: 0 auto
+	behavior: url(libs/PIE/PIE.htc)
 
 .btn-img--exit
 	width: 31px
@@ -147,6 +152,7 @@ body
 	background: rgba(0, 0, 0, 0.6)
 	text-align: center
 	z-index: 10
+	behavior: url(libs/PIE/PIE.htc)
 	&::after
 		content: ""
 		display: table
@@ -172,6 +178,7 @@ body
 		overflow: hidden
 		font-size: 0px
 		background: $white
+		behavior: url(libs/PIE/PIE.htc)
 		span
 			display: inline-block
 			width: 4%
@@ -230,6 +237,7 @@ body
 	text-align: center
 	padding: 10px
 	z-index: 10
+	behavior: url(libs/PIE/PIE.htc)
 	.footer__copyright
 		display: inline-block
 		color: $white
@@ -242,7 +250,8 @@ body
 	text-align: center
 	padding: 250px 0
 	background: rgba(0, 0, 0, 0.6)
-	color: $white
+	color: $white	
+	behavior: url(libs/PIE/PIE.htc)	
 	.main-page__header
 		display: block		
 		font-size: 35px
@@ -268,6 +277,7 @@ body
 	padding: 150px 0
 	background: rgba(0, 0, 0, 0.6)
 	color: $dark-grey
+	behavior: url(libs/PIE/PIE.htc)
 	.authorization-tab__item
 		display: none
 	.authorization-tab__item:first-child
@@ -290,13 +300,16 @@ body
 		text-align: center
 		letter-spacing: 1px
 		padding: 25px 0
+		behavior: url(libs/PIE/PIE.htc)
 	.authorization-tabs .authorization-tabs__contant
 		display: block
 		width: 100%
 		height: 620px
 		background: rgba(255, 255, 255, 0.8)
+		behavior: url(libs/PIE/PIE.htc)
 	.authorization-tabs .active
 		background: rgba(255, 255, 255, 0.8)
+		behavior: url(libs/PIE/PIE.htc)
 	.authorization-tab__item
 		height: 100%
 		font-size: 25px
@@ -315,6 +328,7 @@ body
 			text-indent: 15px
 			font-size: 30px
 			background: rgba(255, 255, 255, 0.8)
+			behavior: url(libs/PIE/PIE.htc)
 		label
 			margin: 50px 50px 0 0
 			position: relative
@@ -335,6 +349,7 @@ body
 	background: rgba(0, 0, 0, 0.8)
 	color: $white
 	z-index: 5
+	behavior: url(libs/PIE/PIE.htc)
 	.album__header
 		display: block
 		width: 1100px
@@ -342,6 +357,7 @@ body
 		margin: 0 auto
 		background: rgba(0, 0, 0, 0.6)
 		cursor: pointer
+		behavior: url(libs/PIE/PIE.htc)
 		span
 			display: block
 			position: relative
@@ -359,6 +375,7 @@ body
 		width: 1100px
 		background: rgba(0, 0, 0, 0.8)
 		margin: 0 auto
+		behavior: url(libs/PIE/PIE.htc)
 	.album__img-wrapper
 		display: block
 		width: 1100px
@@ -368,17 +385,46 @@ body
 		font-size: 0
 		overflow-y: auto
 		overflow-x: hidden
+		behavior: url(libs/PIE/PIE.htc)
 		span
 			display: inline-block
 			width: 33.333%
 			height: 206px
 			background: rgba(0, 0, 0, 0.3)
 			cursor: pointer
+			behavior: url(libs/PIE/PIE.htc)
 			img
 				max-width: 100%
 				max-height: 100%
 	.album__form-wrapper
 		display: none
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: rgba(0, 0, 0, 0.9)
+		behavior: url(libs/PIE/PIE.htc)
+		.album__download-form
+			display: block
+			position: relative
+			top: 30%
+			width: 500px
+			height: 100px
+			margin: 0 auto
+			padding: 35px 20px
+			overflow: hidden
+			text-align: center
+			background: #666
+			.album__download-form__close
+				display: block
+				position: absolute
+				top: 5px
+				right: 10px
+				color: #333
+				cursor: pointer
+				&:hover
+					color: red
 	.album__priview-img
 		display: none
 		position: absolute
@@ -387,6 +433,7 @@ body
 		width: 100%
 		height: 100%
 		background: rgba(0, 0, 0, 0.9)
+		behavior: url(libs/PIE/PIE.htc)
 		.album__priview-img__wrapper
 			display: block
 			position: relative
@@ -398,6 +445,7 @@ body
 			overflow: hidden
 			text-align: center
 			background: rgba(255, 255, 255, 0.6)
+			behavior: url(libs/PIE/PIE.htc)
 			.album__priview-img__close
 				display: block
 				position: absolute
@@ -481,16 +529,12 @@ body
 			background: rgba(0, 0, 0, 0.8)
 			color: $white
 			padding: 15px 50px
+			behavior: url(libs/PIE/PIE.htc)
 			.slider__carousel__info__image-name
 				display: inline-block
 				font-size: 15px
 				font-weight: bold
 				float: left
-			.slider__carousel__info__img-counter
-				display: inline-block
-				width: 90px
-				height: 20px
-				color: $dark-grey
 			.slider__carousel__info__btn-wrapper
 				display: inline-block
 				float: right

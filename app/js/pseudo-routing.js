@@ -75,7 +75,7 @@ $(document).ready(function() {
 	});
 
 	//from album to slider
-	$(".album__img-wrapper span").click(function() {
+	$(".album__img-wrapper").on("click", "span", function() {
 		var showBlock = "block";
 		var hideBlock = "none";
 
@@ -86,20 +86,9 @@ $(document).ready(function() {
 		localStorage.setItem("slider", showBlock);
 
 		var currentImg = $(this).children().attr("src");
-		var imgInSlider = $(".slider__carousel__img-wrapper img").attr("src");
-		
-		if (currentImg != imgInSlider) {
-			$(".slider__carousel__img-wrapper img").removeClass("visible-img");
-			$(".slider__carousel__img-wrapper img").attr("src", currentImg).addClass("visible-img");
-		}
-
-		// var test = $(this).children().attr("src");
-		// alert(test);
-	});
-
-	$(".slider__carousel__img-wrapper img").click(function() {
-		var test = $(this).attr("src");
-		alert(test);
+		var imgName = $(this).children().attr("alt");
+		$(".slider__carousel__img-wrapper").append("<img class='visible-img' src='" + currentImg + "'>");
+		$(".slider__carousel__info__image-name").text(imgName);
 	});
 	
 	//from slider back to album
@@ -112,6 +101,9 @@ $(document).ready(function() {
 
 		localStorage.setItem("main", showBlock);
 		localStorage.setItem("slider", hideBlock);
+
+		$(".slider__carousel__img-wrapper img").removeAttr("class");
+		$(".slider__carousel__info__image-name").text("");
 	});
 
 	var mainPage = localStorage.getItem("main-page");

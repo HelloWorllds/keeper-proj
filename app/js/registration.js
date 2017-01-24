@@ -57,7 +57,7 @@ firebase.auth().onAuthStateChanged(function(firebaseUser) {
 		localStorage.setItem("menu__logout", inlineBlock);
 		console.log(firebaseUser);
 	} else {
-		console.log("firebaseUser");
+		console.log("not work");
 	}
 })
 

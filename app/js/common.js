@@ -59,11 +59,6 @@ $(document).ready(function() {
 		$(".authorization .authorization-tab__item").hide().eq($(this).index()).fadeIn();
 	});
 
-	// //custom scrollbar init
-	// $(".album__img-wrapper").customScrollbar({
-	// 	skin: "default-skin"
-	// })
-
 	//download button
 	$(".album__header").click(function() {
 		if($(".btn-download").css("display") == "none") {
@@ -103,51 +98,6 @@ $(document).ready(function() {
 
 	$(".slider__carousel__info__img-counter span").text(imgCount + " of " + end);
 	$(".slider__carousel__info__image-name").text($(".visible-img").attr("alt"));
-
-	$(".slider .btn-carousel--right").click(function() {
-		$(".slider__carousel__img-wrapper img:eq(" + (rotateIndex) + ")").removeClass("visible-img");
-
-		rotateIndex++;
-
-		$(".slider__carousel__img-wrapper img:eq(" + (rotateIndex) + ")").addClass("visible-img");
-
-		imgCount++;
-		$(".slider__carousel__info__img-counter span").text(imgCount + " of " + end);
-		if (imgCount > end) {
-			imgCount = 1;
-			$(".slider__carousel__info__img-counter span").text(imgCount + " of " + end);
-		}
-
-		if (rotateIndex == end) {			
-			rotateIndex = 0;			
-			$(".slider__carousel__img-wrapper img:eq(" + (end - 1) + ")").removeClass("visible-img");
-			$(".slider__carousel__img-wrapper img:eq(" + (rotateIndex) + ")").addClass("visible-img");
-		}
-		$(".slider__carousel__info__image-name").text($(".visible-img").attr("alt"));
-	});
-
-	$(".slider .btn-carousel--left").click(function() {
-		$(".slider__carousel__img-wrapper img:eq(" + (rotateIndex) + ")").removeClass("visible-img");
-
-		if (rotateIndex == 0) {			
-			rotateIndex = end;
-			$(".slider__carousel__img-wrapper img:eq(0)").removeClass("visible-img");
-			$(".slider__carousel__img-wrapper img:eq(" + (rotateIndex) + ")").addClass("visible-img");
-		}		
-
-		rotateIndex--;
-
-		$(".slider__carousel__img-wrapper img:eq(" + (rotateIndex) + ")").addClass("visible-img");
-
-		imgCount--;		
-		if (imgCount == 0) {
-			imgCount = end;
-			$(".slider__carousel__info__img-counter span").text(imgCount + " of " + end);
-		}
-		$(".slider__carousel__info__img-counter span").text(imgCount + " of " + end);
-
-		$(".slider__carousel__info__image-name").text($(".visible-img").attr("alt"));
-	});
 
 	//like btn
 	var likeCounter = 0;

@@ -1,0 +1,58 @@
+.main-page
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000)
+
+.btn-carousel
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4d000000,endColorstr=#4d000000)
+	&:hover
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000,endColorstr=#80000000)
+
+.btn-download
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#cc000000,endColorstr=#cc000000)
+
+.menu
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000)
+
+.footer
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#e6000000,endColorstr=#e6000000)
+
+.authorization
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000)
+
+.authorization-tab
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000)
+
+.authorization-tabs__contant
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#cc000000,endColorstr=#cc00000)
+
+.authorization-tabs .active
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#cc000000,endColorstr=#cc00000)
+
+.authorization-tab__item
+	input[type=text], input[type=password]
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#cc000000,endColorstr=#cc00000)
+
+.album
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000)
+
+.album__header
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000)
+
+.album__btn-wrapper
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#cc000000,endColorstr=#cc00000)
+
+.album__img-wrapper
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000)
+
+.album__img-wrapper
+	span
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4d000000,endColorstr=#4d000000)
+
+.album__priview-img
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#e6000000,endColorstr=#e6000000)
+
+.album__priview-img__wrapper
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000)
+
+.slider__carousel__info
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#cc000000,endColorstr=#cc00000)
+
