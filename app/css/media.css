@@ -1,0 +1,239 @@
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1366px) {
+	.menu .menu__search {
+		width: 600px;
+	}
+
+	.menu .menu__logout {
+		margin: 20px 25px 0 0;
+		font-size: 20px;
+	}
+
+	.main-page {
+		padding: 180px 0;
+	}
+
+	.main-page .main-page__carousel-btn {
+		top: 300px;
+	}
+
+	.authorization .authorization-tabs {
+		width: 900px;
+		height: 500px;
+	}
+
+	.authorization .authorization-tabs .authorization-tab {
+		width: 450px;
+	}
+
+	.authorization .authorization-tabs .authorization-tabs__contant {
+		height: 420px;
+	}
+
+	.authorization .authorization-tab__item {
+		padding-top: 30px;
+	}
+
+	.authorization .authorization-tab__item input[type=text], .authorization .authorization-tab__item input[type=password] {
+		width: 400px;
+		height: 60px;
+		margin: 30px 40px 0 5px;
+		font-size: 28px;
+	}
+
+	.authorization .authorization-tab__item label {
+		margin: 50px 40px 0 0;
+	}
+
+	.authorization .authorization-tab__item .authorization-tab__item__btn-wrapper {
+		right: 50px;
+	}
+
+	.album .album__img-wrapper {
+		height: 550px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1024px) {
+	.btn-download {
+		width: 900px;
+		height: 40px;
+	}
+
+	.menu .menu__logo {
+		margin: 10px 0 0 25px;
+	}
+
+	.menu .menu__search {
+		width: 300px;
+	}
+
+	.menu .menu__search span {
+		width: 10%;
+	}
+
+	.menu .menu__search input {
+		width: 90%;
+	}
+
+	.menu .menu__auth {
+		margin: 15px 25px 0 0;
+		font-size: 28px;
+	}
+
+	.menu .menu__logout {
+		margin: 20px 25px 0 0;
+		font-size: 20px;
+	}
+
+	.main-page {
+		padding: 180px 0;
+	}
+
+	.main-page .main-page__carousel-btn {
+		top: 300px;
+	}
+
+	.authorization .authorization-tabs {
+		width: 800px;
+		height: 500px;
+	}
+
+	.authorization .authorization-tabs .authorization-tab {
+		width: 400px;
+		height: 70px;
+		font-size: 28px;
+	}
+
+	.authorization .authorization-tabs .authorization-tabs__contant {
+		height: 430px;
+	}
+
+	.authorization .authorization-tab__item {
+		padding-top: 20px;
+	}
+
+	.authorization .authorization-tab__item input[type=text], .authorization .authorization-tab__item input[type=password] {
+		width: 370px;
+		height: 60px;
+		margin: 30px 20px 0 5px;
+		font-size: 28px;
+	}
+
+	.authorization .authorization-tab__item label {
+		margin: 50px 30px 0 0;
+	}
+
+	.album {
+		padding: 100px 0;
+	}
+
+	.album .album__header {
+		width: 900px;
+	}
+
+	.album .album__btn-wrapper {
+		width: 900px;
+	}
+
+	.album .album__img-wrapper {
+		width: 900px;
+		height: 550px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.btn-form {
+		width: 280px;
+	}
+
+	.btn-download {
+		width: 700px;
+		height: 40px;
+	}
+
+	.menu .menu__logo {
+		margin: 10px 0 0 15px;
+	}
+
+	.menu .menu__search {
+		width: 300px;
+	}
+
+	.menu .menu__search span {
+		width: 10%;
+	}
+
+	.menu .menu__search input {
+		width: 90%;
+	}
+
+	.menu .menu__auth {
+		margin: 15px 15px 0 0;
+		font-size: 28px;
+	}
+
+	.menu .menu__logout {
+		margin: 20px 15px 0 0;
+		font-size: 20px;
+	}
+
+	.main-page .main-page__header {
+		font-size: 30px;
+	}
+
+	.main-page .main-page__carousel-btn {
+		top: 400px;
+	}
+
+	.authorization .authorization-tabs {
+		width: 600px;
+		height: 500px;
+	}
+
+	.authorization .authorization-tabs .authorization-tab {
+		width: 300px;
+		height: 70px;
+		font-size: 28px;
+	}
+
+	.authorization .authorization-tabs .authorization-tabs__contant {
+		height: 430px;
+	}
+
+	.authorization .authorization-tab__item {
+	    font-size: 22px;
+	    padding-top: 20px;
+	}
+
+	.authorization .authorization-tab__item input[type=text], .authorization .authorization-tab__item input[type=password] {
+		width: 280px;
+		height: 60px;
+		margin: 30px 20px 0 5px;
+		font-size: 28px;
+	}
+
+	.authorization .authorization-tab__item label {
+		margin: 50px 10px 0 0;
+	}
+
+	.album {
+		padding: 100px 0;
+	}
+
+	.album .album__header {
+		width: 700px;
+	}
+
+	.album .album__btn-wrapper {
+		width: 700px;
+	}
+
+	.album .album__img-wrapper {
+		width: 700px;
+		height: 650px;
+	}
+}
